@@ -12,5 +12,7 @@ clickedButton.addEventListener('click',function(){
         imageLi.style.display='block';
         console.log(data.message);
         dogImage.src=data.message;
+        }).catch(error =>{
+            alert(error);
         })
 });
